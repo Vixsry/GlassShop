@@ -1,0 +1,338 @@
+/*/////////////*/
+/* NAVBAR STLE*/
+/*///////////*/
+.navbar-brand {
+  color: black;
+  font-size: 1.3rem;
+  background: none;
+  border-radius: 10px
+}
+
+.navbar-brand span {
+  color: #8830F7;
+  font-size: 1.4rem;
+}
+
+.navbar-toggler {
+  background-color: #8830F7;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  border: none:
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/*/////////////*/
+/* CART STYLE */
+/*///////////*/
+.cart-counter {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  color: black;
+  padding: 0.2rem 0.4rem;
+  font-size: 12px;
+  margin-left: 2px;
+  background-color: #8830FD;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 4px;
+}
+
+.cart-counter:hover {
+  background-color: black;
+  color: black;
+  transform: scale(1.1);
+}
+
+.navbar .btn {
+  font-size: 25px;
+  color: black;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .btn:hover {
+  color: black;
+  transform: scale(1.1);
+}
+
+.navbar .btn:active {
+  transform: scale(0.9);
+}
+
+#checkoutForm {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#checkoutForm h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #555;
+}
+
+.form-control {
+    border-radius: 6px;
+    border: 1px solid black;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: black;
+    box-shadow: 0 0 5px rgba(73, 80, 87, 0.2);
+    outline: none;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+.g-3 > .col-md-6,
+.g-3 > .col-12 {
+    margin-bottom: 15px;
+}
+
+.modal-footer {
+    background-color: #8830FD;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid white;
+}
+
+.modal-footer h5 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+}
+
+.modal-footer button.btn-outline-secondary {
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/*///////////////////*/
+/* CATEGORY SECTION */
+/*/////////////////*/
+.category-card {
+    transition: all 0.3s ease;
+    border: none;
+    background: #fff;
+    height: 100%;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    font-size: 26px;
+}
+.fashion-icon { background: #FFE8E8; color: #FF4444; }
+.electronic-icon { background: #E8F4FF; color: #4477FF; }
+.home-icon { background: #FFF3E8; color: #FF8844; }
+.watch-icon { background: #E8FFE8; color: #44FF44; }
+.automotive-icon { background: #FFE8F4; color: #FF44AA; }
+.gaming-icon { background: #F4E8FF; color: #AA44FF; }
+.camera-icon { background: #E8FFF3; color: #44FFAA; }
+.food-icon { background: #FFE8E8; color: #FF4444; }
+
+.item-count {
+    font-size: 14px;
+    color: #777;
+}
+
+.swiper {
+    padding: 20px 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #333;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #333;
+}
+@media (max-width: 768px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+}
+.product-card {
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+.swiper {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*//////////////////////////*/
+/* BUTTON MODAL CART STYLE */
+/*////////////////////////*/
+
+.modal-btn {
+  background-color: black;
+  color: white;
+}
+.modal-btn:hover {
+  background-color: white;
+  color: black;
+  
+}
+
+
+/*////////////////////////////////*/
+/* PRODUCT CARD & CHECKOUT STYLE */
+/*//////////////////////////////*/
+.custom-btn {
+    background-color: #8830FD;
+    color: white;
+    border: none;
+}
+
+.custom-btn:hover {
+    background-color: black;
+  color: white;
+}
+
+/*////////////////////*/
+/* OUR PRODUCT STYLE */
+/*//////////////////*/
+.product-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.product-card img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+.product-card .card-body {
+    padding: 16px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.product-card .card-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 8px;
+}
+.product-card .card-text {
+    font-size: 1em;
+    color: black;
+    margin-bottom: 16px;
+}
+
+
+/*///////////////*/
+/* FOOTER STYLE */
+/*/////////////*/
+.footer {
+    background-color: black;
+    color: white;
+    padding: 60px 0 0 0;
+}
+
+.footer h5 {
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #8830FD;
+}
+.social-icons a {
+    color: #8830FD;
+    margin-right: 15px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #8830FD;
+}
+.copyright {
+    background-color: black;
+    padding: 20px 0;
+    margin-top: 40px;
+}
