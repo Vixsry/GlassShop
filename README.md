@@ -7,6 +7,9 @@ PRODUCT CARD
 ADD CART & MODAL CART
 FOOTER DLL
 
+# NOTE
+Saya akan memperbarui template ini sewaktu watu untuk menambahkan beberapa fitur
+
 ## ELEMENT YANG DI GUNAKAN DALAM DESAIN
 Font Awesome
 Bootstrap
