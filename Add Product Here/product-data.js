@@ -4,7 +4,7 @@ const products = [
         id: 1, 
         name: 'ESP8266 V3 IOT', 
         basePrice: 31000, 
-        image: 'Add Product Here/Product/Product-1.png',
+        image: 'Add Product Here/product/Product-1.png',
         variants: [
             { name: 'Standar', price: 31000 },
             { name: 'Pro', price: 35000 }
@@ -14,7 +14,7 @@ const products = [
         id: 2, 
         name: 'ESP32 WROOM TYPE-C', 
         basePrice: 70000, 
-        image: 'Add Product Here/Product/Product-2.png',
+        image: 'Add Product Here/product/Product-2.png',
         variants: [
             { name: 'Standar', price: 70000 },
             { name: 'Advanced', price: 75000 }
