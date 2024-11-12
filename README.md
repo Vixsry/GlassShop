@@ -1,6 +1,6 @@
-# GlassShop - Transparent Ecommerce Template
+# GlassShop Ecommerce Template
 
-GlassShop adalah template website e-commerce dengan desain modern dan transparan, dibangun menggunakan **Bootstrap CSS** untuk tampilan responsif, **Swiper.js** untuk slider interaktif, dan **AOS (Animate on Scroll)** untuk animasi yang mulus saat menggulir halaman.
+GlassShop adalah template website e-commerce dengan desain modern dan transparan, dibangun menggunakan **Bootstrap CSS** untuk tampilan responsif, **Swiper.js** untuk slider interaktif, **AOS (Animate on Scroll)** untuk animasi yang mulus saat menggulir halaman, dan **Font Awesome (FA Icon)** untuk ikon-ikon stylish yang mempercantik tampilan.
 
 ---
 
