@@ -26,10 +26,9 @@ Lihat demo langsung di sini: [GlassShop Live Demo](#)
 - **Bootstrap CSS** - Framework CSS yang memudahkan pengembangan UI responsif
 - **Swiper.js** - Slider yang ringan dan fleksibel untuk menampilkan produk atau promo
 - **AOS (Animate on Scroll)** - Library untuk menambahkan animasi saat scroll pada elemen tertentu
-
+- **Font Awesome (FA Icon)** - Library ikon yang stylish untuk mempercantik tampilan antarmuka pengguna
+  
 ---
-
-## Elemen Yang di gunakan dalam desaian
 
 ## Quick Links
 
