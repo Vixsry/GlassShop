@@ -6,7 +6,7 @@ GlassShop adalah template website e-commerce dengan desain modern dan transparan
 
 ## Demo
 
-Lihat demo langsung di sini: [GlassShop Live Demo]([Demo](https://vixsry.github.io/GlassShop/)
+Lihat demo langsung di sini: [GlassShop Live Demo][Demo](https://vixsry.github.io/GlassShop/)
 
 ---
 
