@@ -37,3 +37,24 @@ Lihat demo langsung di sini: [GlassShop Live Demo](#)
 - [AOS (Animate on Scroll)](https://michalsnik.github.io/aos/) - Library untuk menambahkan animasi saat scroll.
 - [Font Awesome](https://fontawesome.com/) - Ikon yang stylish untuk berbagai kebutuhan UI.
 
+---
+
+## 📜 Lisensi Penggunaan
+
+### Anda Diperbolehkan:
+- Menggunakan template ini baik untuk keperluan **pribadi** maupun **komersial**.
+- Menyesuaikan template sesuai kebutuhan Anda dengan mudah.
+
+### Anda Tidak Diperbolehkan:
+- Menghapus atau mengubah atribusi pembuat template ini.
+
+---
+
+## ⚠️ Catatan Penting
+
+Template ini menggunakan elemen dan pustaka dari pihak ketiga yang masing-masing memiliki lisensi yang berbeda. Pastikan untuk membaca dan mematuhi ketentuan lisensi yang berlaku dari setiap pustaka berikut:
+
+- **Font Awesome**: [Lisensi Font Awesome](https://fontawesome.com/license/free)
+- **Bootstrap**: [Lisensi Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/#license)
+- **AOS Animation**: [Lisensi AOS](https://github.com/michalsnik/aos/blob/master/LICENSE)
+- **Swiper**: [Lisensi Swiper](https://github.com/nolimits4web/swiper/blob/master/LICENSE)
