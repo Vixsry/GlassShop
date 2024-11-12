@@ -1,342 +1,235 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GO-commerce</title>
+    <title>GlassE-commerce</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-    
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
-    
-    <!-- AOS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     
-    <!-- Swiper -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css" rel="stylesheet">
-    
-    <!-- CSS STYLE -->
     <link rel="stylesheet" href="css/costom.css">
+    
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <div class="position-relative">
-                    <button class="btn" data-bs-toggle="modal" data-bs-target="#cartModal">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="cart-counter" id="cartCount">0</span>
-                    </button>
-                </div>
-            <a class="navbar-brand" href="#"><b><span>GO</span></b> COMMERCE</a>
+            <a class="navbar-brand" href="#">GlassShop</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link active" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#products">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu glass-effect">
+                            <li><a class="dropdown-item" href="#">Smartphones</a></li>
+                            <li><a class="dropdown-item" href="#">Laptops</a></li>
+                            <li><a class="dropdown-item" href="#">Accessories</a></li>
+                        </ul>
                     </li>
                 </ul>
-                
+                <form class="d-flex me-3">
+                    <input class="form-control search-bar" type="search" placeholder="Search products...">
+                </form>
+                <div class="d-flex">
+                    <button class="btn custom-btn me-2" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cartCount">0</span>
+                    </button>
+                    <button class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section with Swiper -->
-    <section id="home" class="mt-5">
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="asset/hero-1.jpg" alt="Slide 1">
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-shape shape-1"></div>
+        <div class="hero-shape shape-2"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 hero-content" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="hero-title">Discover Amazing Products</h1>
+                    <p class="hero-subtitle">Experience the future of shopping with our glass morphism design and curated collection of premium products.</p>
+                    <button class="btn cta-button">Shop Now</button>
                 </div>
-                <div class="swiper-slide">
-                    <img src="asset/hero-2.jpg" alt="Slide 2">
-                </div>
-                <div class="swiper-slide">
-                    <img src="asset/hero-3.jpg" alt="Slide 3">
+                <div class="col-lg-6 hero-image" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="glass p-4 floating">
+                        <img src="asset//Hero.png" alt="Featured Product" class="img-fluid">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Products Section -->
+    <section id="products" class="container my-5">
+        <h2 class="text-white mb-4" data-aos="fade-up">Featured Products</h2>
+        <div class="row g-4"></div>
+    </section>
     
-    <section id="OurProduct" class="py-5">
-        <div class="container py-5">
-        <!-- Header -->
-        <div class="text-center mb-5">
-            <h2 class="display-6 fw-bold mb-3">Shop by Category</h2>
-            <p class="text-muted">Find what you need from our wide range of products</p>
-        </div>
-
-        <!-- Swiper -->
-        <div class="swiper categoriesSwiper">
-            <div class="swiper-wrapper">
-                <!-- Fashion -->
-                <div class="swiper-slide">
-                    <div class="category-card card text-center p-3">
-                        <div class="category-icon fashion-icon">
-                            <i class="fas fa-tshirt"></i>
-                        </div>
-                        <div class="card-body p-0">
-                            <h5 class="card-title mb-2">Fashion</h5>
-                            <p class="item-count mb-0">12,453 items</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Electronics -->
-                <div class="swiper-slide">
-                    <div class="category-card card text-center p-3">
-                        <div class="category-icon electronic-icon">
-                            <i class="fas fa-laptop"></i>
-                        </div>
-                        <div class="card-body p-0">
-                            <h5 class="card-title mb-2">Electronics</h5>
-                            <p class="item-count mb-0">8,234 items</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Home & Living -->
-                <div class="swiper-slide">
-                    <div class="category-card card text-center p-3">
-                        <div class="category-icon home-icon">
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <div class="card-body p-0">
-                            <h5 class="card-title mb-2">Home & Living</h5>
-                            <p class="item-count mb-0">6,234 items</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Watches -->
-                <div class="swiper-slide">
-                    <div class="category-card card text-center p-3">
-                        <div class="category-icon watch-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="card-body p-0">
-                            <h5 class="card-title mb-2">Watches</h5>
-                            <p class="item-count mb-0">4,523 items</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Automotive -->
-                <div class="swiper-slide">
-                    <div class="category-card card text-center p-3">
-                        <div class="category-icon automotive-icon">
-                            <i class="fas fa-car"></i>
-                        </div>
-                        <div class="card-body p-0">
-                            <h5 class="card-title mb-2">Automotive</h5>
-                            <p class="item-count mb-0">3,234 items</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Gaming -->
-                <div class="swiper-slide">
-                    <div class="category-card card text-center p-3">
-                        <div class="category-icon gaming-icon">
-                            <i class="fas fa-gamepad"></i>
-                        </div>
-                        <div class="card-body p-0">
-                            <h5 class="card-title mb-2">Gaming</h5>
-                            <p class="item-count mb-0">2,345 items</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Camera -->
-                <div class="swiper-slide">
-                    <div class="category-card card text-center p-3">
-                        <div class="category-icon camera-icon">
-                            <i class="fas fa-camera"></i>
-                        </div>
-                        <div class="card-body p-0">
-                            <h5 class="card-title mb-2">Camera</h5>
-                            <p class="item-count mb-0">1,234 items</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Food & Beverage -->
-                <div class="swiper-slide">
-                    <div class="category-card card text-center p-3">
-                        <div class="category-icon food-icon">
-                            <i class="fas fa-utensils"></i>
-                        </div>
-                        <div class="card-body p-0">
-                            <h5 class="card-title mb-2">Food & Beverage</h5>
-                            <p class="item-count mb-0">5,234 items</p>
-                        </div>
-                    </div>
-                </div>
+<!-- Modal for product details -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-white" id="modalProductTitle">Product Name</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-
-            <!-- Navigation buttons -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
+            <div class="modal-body" id="modalProductBody">
+                <!-- Variant options will be injected here -->
+            </div>
+            <div class="modal-footer">
+                <p class="text-white" id="modalProductPrice">Rp 0</p>
+                <button type="button" class="btn custom-btn w-100" onclick="addToCart()">Add to Cart</button>
+            </div>
         </div>
     </div>
-    </section>
+</div>
     
-    <!-- Products Section -->
-    <section id="products" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4" data-aos="fade-up">Our Products</h2>
-            <div class="row g-4">
-                <!-- Product cards will be dynamically added here -->
-            </div>
-        </div>
-    </section>
 
     <!-- Cart Modal -->
     <div class="modal fade" id="cartModal" tabindex="-1">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content glass-effect">
                 <div class="modal-header">
-                    <h5 class="modal-title">SHOPPING CART</h5>
-                    <button type="button" class="btn custom-btn" data-bs-dismiss="modal"><i class="fa fa-x"></i></button>
+                    <h5 class="modal-title text-white">Shopping Cart</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <div id="cartItems" class="mb-4">
-                        <!-- Cart items will be dynamically added here -->
+                    <div id="cartItems"></div>
+                    <div class="text-end mt-3">
+                        <h5 class="text-white">Total: Rp <span id="cartTotal">0</span></h5>
                     </div>
-                    <form id="checkoutForm" class="needs-validation" novalidate>
-                        <h5>Shipping Information</h5>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label class="form-label">Full Name</label>
-                                <input type="text" class="form-control" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label">Phone Number</label>
-                                <input type="tel" class="form-control" required>
-                            </div>
-                            <div class="col-12">
-                                <label class="form-label">Email</label>
-                                <input type="email" class="form-control" required>
-                            </div>
-                            <div class="col-12">
-                                <label class="form-label">Address</label>
-                                <textarea class="form-control" rows="3" required></textarea>
-                            </div>
-                        </div>
-                    </form>
                 </div>
                 <div class="modal-footer">
-                    <div class="me-auto">
-                        <h5>Total: Rp <span id="cartTotal">0</span></h5>
-                    </div>
-                    <button type="submit" form="checkoutForm" class="btn modal-btn">Checkout</button>
+                    <button type="button" class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#checkoutModal">
+                        Checkout
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-    
-    <!-- New Footer Section -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <!-- Company Info -->
-                <div class="col-lg-4 mb-4">
-                    <h5>GO COMMERCE</h5>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                    </div>
-                </div>
 
-                <!-- Categories -->
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h5>Categories</h5>
-                    <ul class="footer-links">
-                        <li><a href="#">Electronics</a></li>
-                        <li><a href="#">Fashion</a></li>
-                        <li><a href="#">Home & Living</a></li>
-                        <li><a href="#">Sports</a></li>
-                        <li><a href="#">Accessories</a></li>
-                    </ul>
+    <!-- Checkout Modal -->
+    <div class="modal fade" id="checkoutModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content glass-effect">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white">Checkout</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
-                
-                <!-- Quick Links -->
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h5>Quick Links</h5>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#products">Products</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Useful Links -->
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h5>Useful Links</h5>
-                    <ul class="footer-links">
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Disclaimer</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <h5>Contact Us</h5>
-                    <div class="contact-info">
-                        <p><i class="fas fa-map-marker-alt"></i> 123 Shopping Street, Jakarta, Indonesia</p>
-                        <p><i class="fas fa-phone"></i> +62 123 456 7890</p>
-                        <p><i class="fas fa-envelope"></i> info@example.com</p>
-                        <p><i class="fas fa-clock"></i> Mon - Sat: 09:00 - 21:00</p>
-                    </div>
+                <div class="modal-body">
+                    <form id="checkoutForm" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label class="form-label text-white">Full Name</label>
+                            <input type="text" class="form-control search-bar" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-white">Email</label>
+                            <input type="email" class="form-control search-bar" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-white">Address</label>
+                            <textarea class="form-control search-bar" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-white">Phone</label>
+                            <input type="tel" class="form-control search-bar" required>
+                        </div>
+                        <button type="submit" class="btn custom-btn w-100">Place Order</button>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Copyright -->
-        <div class="copyright">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <p class="mb-md-0 text-center text-md-start">
-                            © 2024 Your Company Name. All Rights Reserved.
-                        </p>
-                    </div>
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content glass-effect">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white">Login</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label text-white">Email</label>
+                            <input type="email" class="form-control search-bar">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-white">Password</label>
+                            <input type="password" class="form-control search-bar">
+                        </div>
+                        <button type="submit" class="btn custom-btn w-100">Login</button>
+                    </form>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
 
-    <!-- BOOTSTRAP SRIPTS -->
+<!-- Footer -->
+<footer class="footer mt-5 py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>About Us</h5>
+                <p>Your premier destination for the latest tech gadgets and accessories.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Terms of Service</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p class="mb-0">&copy; 2024 Name Bussines .All Rights Reserved.<br>🤍 Design By <a href="#" class="text-white text-decoration-none">Viksry</a></p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Script Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     
-    <!-- AOS SRIPTS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="js/aos.js"></script>
-    
-    <!-- SWIPER SRIPTS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js"></script>
-    
-    <!-- SRIPTS -->
-    <script src="js/script.js"></script>
-    <script src="Add Product Here/product-data.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  
+  <!-- AOS Script-->
+  <script src="js/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  
+<!-- My JS -->
+<script src="Add Product Here/product-data.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
