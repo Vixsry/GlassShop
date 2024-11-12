@@ -1,36 +1,40 @@
-## GOCOMMERCE
-Template Website E-Commerce dengan kombinasi warna ungu, hitam, dan putih ini dapat diunduh secara gratis. Desain modern dan responsif ini siap untuk dikembangkan lebih lanjut, memungkinkan Anda untuk menyesuaikan fitur dan tampilan sesuai dengan kebutuhan bisnis Anda.
+# GlassShop - Transparent Ecommerce Template
 
-## FITUR
-KATEGORI PRODUK
-PRODUCT CARD
-ADD CART & MODAL CART
-FOOTER DLL
+GlassShop adalah template website e-commerce dengan desain modern dan transparan, dibangun menggunakan **Bootstrap CSS** untuk tampilan responsif, **Swiper.js** untuk slider interaktif, dan **AOS (Animate on Scroll)** untuk animasi yang mulus saat menggulir halaman.
 
-# NOTE
-Saya akan memperbarui template ini sewaktu watu untuk menambahkan beberapa fitur
+---
 
-## ELEMENT YANG DI GUNAKAN DALAM DESAIN
-Font Awesome
-Bootstrap
-AOS Animation
-Swiper
+## Demo
 
-## Font Awesome
-https://fontawesome.com/
-## Bootstrap
-https://getbootstrap.com/
-## AOS Animation
-https://michalsnik.github.io/aos/
-## Swiper
-https://swiperjs.com/
+Lihat demo langsung di sini: [GlassShop Live Demo](#)
 
-## YANG BOLEH DAN TIDAK BOLEH
-Anda boleh:
-Menggunakan template ini untuk keperluan pribadi atau komersial.
+---
 
-Yang tidak boleh:
-Menghapus atribut pembuat desain template ini.
+## Fitur Utama
 
-## NOTE ⚠️
-Semua elemen yang digunakan dalam template website ini memiliki lisensinya masing-masing. Kami berharap Anda membaca ketentuan lisensi di situs web atau GitHub Pihak ketiga masing-masing
+- **Desain Transparan**: Tampilan elegan dan modern dengan efek transparan yang menarik.
+- **Responsif**: Desain yang menyesuaikan di berbagai perangkat (desktop, tablet, dan smartphone) dengan Bootstrap.
+- **Animasi Scroll**: Menggunakan AOS untuk memberikan pengalaman interaktif dan animasi saat halaman digulir.
+- **Slider Interaktif**: Menggunakan Swiper.js untuk menampilkan produk dalam bentuk slider yang stylish.
+- **Komponen UI Modern**:FA Ikon, tombol, dan formulir yang mudah digunakan dan disesuaikan.
+
+---
+
+## Teknologi
+
+- **HTML5** dan **CSS3**
+- **Bootstrap CSS** - Framework CSS yang memudahkan pengembangan UI responsif
+- **Swiper.js** - Slider yang ringan dan fleksibel untuk menampilkan produk atau promo
+- **AOS (Animate on Scroll)** - Library untuk menambahkan animasi saat scroll pada elemen tertentu
+
+---
+
+## Elemen Yang di gunakan dalam desaian
+
+## Quick Links
+
+- [Bootstrap](https://getbootstrap.com/) - Framework CSS untuk membuat desain responsif.
+- [Swiper.js](https://swiperjs.com/) - Library untuk membuat slider interaktif.
+- [AOS (Animate on Scroll)](https://michalsnik.github.io/aos/) - Library untuk menambahkan animasi saat scroll.
+- [Font Awesome](https://fontawesome.com/) - Ikon yang stylish untuk berbagai kebutuhan UI.
+
