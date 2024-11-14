@@ -20,6 +20,17 @@ const products = [
             { name: 'Advanced', price: 75000 }
         ]
     },
+
+    { 
+        id: 2, 
+        name: 'SingleBoard Computer', 
+        basePrice: 70000, 
+        image: 'Add Product Here/product/Product-2.png',
+        variants: [
+            { name: 'Standar', price: 70000 },
+            { name: 'Advanced', price: 75000 }
+        ]
+    },
     // Other products
 ];
 
